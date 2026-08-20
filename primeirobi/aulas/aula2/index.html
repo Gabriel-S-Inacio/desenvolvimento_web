@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Registre-se</legend>
+        <h3>Informe seus dados para realizar o cadasdro na plataforma</h3>
+            <form action="url-api-back-and" method="post">
+
+                <label for="nome">Infome seu Nome</label>
+                <input type="text"
+                 id="name" 
+                 name="nome" 
+                 placeholder="Nome:" 
+                 maxlength="25"
+                 title="Informe o seu nome completo" 
+                 pattern="[A-za-z ]+"
+                 required>
+                  
+                <br>
+
+                <label for="email">Infome seu Email</label>
+                <input type="email" 
+                id="email" 
+                name="email" 
+                placeholder="Email:" 
+                required>
+
+                <br>
+
+                <label for="senha">Infome sua senha</label>
+                <input type="password" 
+                id="senha" 
+                name="senha" 
+                placeholder="Senha:" 
+                required>
+
+                <br>
+
+                <label for="nome">Insira sua biografia</label><br>
+                <textarea name="bio" 
+                id="bio" 
+                placeholder="Insira sua história" 
+                rows="6" cols="26"  
+                style="resize: none;"
+                required
+                >
+                
+                </textarea>
+
+                <br>
+
+                <label for="time">Qual seu time</label>
+
+                <br>
+
+                <select name="melhor time" id="time">
+                    <option value="" selected disabled> Selecione</option>
+                    <optgroup label="Times A">
+                    <option value="Flamengo">Flamengo</option>
+                    <option value="Flamengo">Flamengo</option>
+                    <option value="Flamengo">Flamengo</option>
+                    </optgroup>
+                     <optgroup label="Times B">
+                    <option value="Flamengo">Flamengo</option>
+                    <option value="Flamengo">Flamengo</option>
+                    </optgroup>
+
+                </select>
+
+                <br>
+                <br>
+
+                <button>Enviar</button> <!-- mais usado em JS -->
+                <!-- <input type="submit" value="Enviar"> -->
+
+             </form>
+    </fieldset>
+</body>
+</html>
