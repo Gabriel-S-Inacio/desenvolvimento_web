@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+background-color: blanchedalmond;
+height: 100vh;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+}
+
+.caixa{
+    flex-grow: 1;
+    width: 140px;
+    height: 140px;
+    background-color: blueviolet;
+    border: solid 6px black;
+}
+
+@media (max-widht: 768px){
+    .caixa{
+        width: 80px;
+        height: 8px;
+    }
+}
